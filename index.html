@@ -1,0 +1,70 @@
+<!-- ======================================================
+Lab 5 - index.html starter
+======================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Photo Club Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Join the Travel Photo Club</h1>
+    </header>
+    <main>
+        <section id="gallery">
+            <h2>Featured Shots (Select to Learn More)</h2>
+            <div class="gallery-grid">
+                <div class="thumb" tabindex="0" data-city="Paris">
+                    <img alt="Paris travel photo" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800" />
+                </div>
+                <div class="thumb" tabindex="0" data-city="Groningen">
+                    <img alt="Groningen travel photo" src="https://plus.unsplash.com/premium_photo-1661946565922-084409a09d35?w=800" />
+                </div>
+                <div class="thumb" tabindex="0" data-city="Kathmandu">
+                    <img alt="Kathmandu travel photo" src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=800" />
+                </div>
+                <!-- TODO (HTML #1): Add the remaining thumbnails (Tokyo, New York, etc. at
+least 3) using real images from Unsplash / Pexels / Pixabay. Each thumbnail
+must contain an <img> and must keep tabindex="0" on the .thumb container.
+-->
+            </div>
+            <p id="image-caption"> Click (or press Enter) to select.</p>
+        </section>
+        <section id="registration">
+            <h2>Member Sign Up</h2>
+            <form id="signup-form" novalidate>
+                <div class="form-group">
+                    <label for="username" id="label-1">Username:</label>
+                    <input type="text" id="username" name="username">
+                    <span class="error-msg" id="error-username"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error-msg" id="error-email"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <span class="error-msg" id="error-password"></span>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="terms"> I agree to the terms
+
+                    </label>
+                    <span class="error-msg" id="error-terms"></span>
+                </div>
+                <button type="submit">Register Now</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
